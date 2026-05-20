@@ -1,0 +1,41 @@
+/* style.css */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Icon */
+i {
+    font-size: 40px;
+    margin: 15px;
+    color: #333;
+    transition: 0.3s;
+}
+
+i:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+/* Box */
+div {
+    background: linear-gradient(120deg, red, yellow, green, blue);
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.4s;
+}
+
+div:hover {
+    transform: rotate(10deg) scale(1.1);
+}
