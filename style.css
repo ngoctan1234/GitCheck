@@ -79,6 +79,7 @@ div:hover {
 
     margin: 0 !important;
     vertical-align: top;
+    transition: 1s;
 }
 
 /* chặn hover cũ ăn vào container */
@@ -102,6 +103,10 @@ div.container .box:hover:before {
     transform: translateY(20px);
 }
 
-.container>div.box:hover {
-    transform: none !important;
+
+
+.box:hover{
+    background: #e74c3c !important;
+    transform: translateY(20px) !important;
+    padding: 10px !important;
 }
