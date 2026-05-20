@@ -59,7 +59,8 @@ div:hover {
 }
 
 /* css riêng cho box */
-.container > .box {
+.container>.box {
+    position: relative;
     width: 120px !important;
     height: 120px !important;
 
@@ -83,8 +84,24 @@ div:hover {
 /* chặn hover cũ ăn vào container */
 div.container:hover {
     transform: none !important;
+
 }
 
-.container > div.box:hover {
+div.container .box:before {
+    content: '50%';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: red;
+    transition: 1s;
+}
+
+div.container .box:hover:before {
+    transform: translateY(20px);
+}
+
+.container>div.box:hover {
     transform: none !important;
 }
