@@ -44,3 +44,47 @@ div {
 div:hover {
     transform: rotate(10deg) scale(1.1);
 }
+
+/* container lớn màu xanh */
+.container {
+    width: 700px;
+    height: 400px;
+    background: green !important;
+    padding: 30px;
+    margin: auto;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    display: block !important;
+}
+
+/* css riêng cho box */
+.container > .box {
+    width: 120px !important;
+    height: 120px !important;
+
+    background: transparent !important;
+    border: 4px solid red !important;
+    border-radius: 0 !important;
+
+    display: inline-block !important;
+
+    color: black !important;
+    font-size: 30px;
+    font-weight: normal !important;
+
+    box-shadow: none !important;
+    transform: none !important;
+
+    margin: 0 !important;
+    vertical-align: top;
+}
+
+/* chặn hover cũ ăn vào container */
+div.container:hover {
+    transform: none !important;
+}
+
+.container > div.box:hover {
+    transform: none !important;
+}
